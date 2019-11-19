@@ -31,6 +31,5 @@
 6. 如何自动对ipa进行mach-o注入以及重签名保证ipa的可运行
 
 ### 架构图
-
-![bc040e7c-d6a6-4f69-a0d7-f1a219cd1e85](/Users/pineappleym/Desktop/bc040e7c-d6a6-4f69-a0d7-f1a219cd1e85.png)
+![bc040e7c-d6a6-4f69-a0d7-f1a219cd1e85.png](https://i.loli.net/2019/11/19/FqCtnuEck9LvjQp.png)
 
