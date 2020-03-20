@@ -1,0 +1,6 @@
+framework module BDiOSpy {
+  umbrella header "BDiOSpy-umbrella.h"
+
+  export *
+  module * { export * }
+}

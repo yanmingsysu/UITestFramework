@@ -1,0 +1,32 @@
+{
+  "name": "BDiOSpy",
+  "version": "0.1.0",
+  "summary": "iOS UI AutoTest Framework",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "http://toutiao.com",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yanmingsysu": "yanming.sysu@bytedance.com"
+  },
+  "source": {
+    "git": "git@code.byted.org:yanming.sysu/bdiospy.git"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BDiOSpy/Classes/**/*",
+  "dependencies": {
+    "GCDWebServer": [
+      "~> 3.0"
+    ]
+  },
+  "frameworks": [
+    "IOKit",
+    "UIKit",
+    "CoreLocation",
+    "CoreFoundation"
+  ]
+}

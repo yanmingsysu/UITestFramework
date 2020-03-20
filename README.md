@@ -1,35 +1,29 @@
-毕业设计想以自己设计的iOS端的UI自动化测试框架为题，相关的业界产品调研见doc文档。相关背景介绍见下。
+# BDiOSpy
 
-### 简介
+[![CI Status](https://img.shields.io/travis/yanmingsysu/BDiOSpy.svg?style=flat)](https://travis-ci.org/yanmingsysu/BDiOSpy)
+[![Version](https://img.shields.io/cocoapods/v/BDiOSpy.svg?style=flat)](https://cocoapods.org/pods/BDiOSpy)
+[![License](https://img.shields.io/cocoapods/l/BDiOSpy.svg?style=flat)](https://cocoapods.org/pods/BDiOSpy)
+[![Platform](https://img.shields.io/cocoapods/p/BDiOSpy.svg?style=flat)](https://cocoapods.org/pods/BDiOSpy)
 
-在当前的实际生产环境中，由于多人的代码协作问题，代码肯定会产生bug，仅靠人力的code review以及QA的人力测试是费时费力而收效甚微的。在此背景下，拥有一个可以在每次代码提交，或者是发版的时候可以对代码质量进行检查的方案就是保证代码质量的必需品。
+## Example
 
-对代码进行各种的自动化的测试（即不需要人力投入，由mr&pr触发的自动对代码测试），需要专门的定制化方案进行框架开发，各个大厂都有自己的解决方案，例如阿里的[macaca](https://macacajs.github.io/zh/)，腾讯的[QT4i](https://qt4i.readthedocs.io/zh_CN/latest/)，都是类似的解决方案。在此基础上，决定选取开发类似的自动化测试框架，用于iOS端的UI自动化测试以及配套的各项功能，例如拉取当前页面控件树，运行xcuitest脚本，屏幕指定坐标点击长按，性能数据监控，当程序发生卡死时dump出堆栈信息序列化等等，并在Mac端和服务器端配合给出全套方案。
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-### 任务分解
+## Requirements
 
-1.	iOS端服务器架构，12月10日
-2.	iOS和Mac通信设计，12月15日
-3.	mac端软件适配，3月10日
-4.	后端服务器搭建，12月30日
-5.	iOS端控件树拉取，12月20日
-6.	iOS端控制点击完成，1月5日
-7.	iOS端数据监控设计，2月25日
-8.	iOS端crash信息dump采集，3月10日
-9.	iOS更多功能的完善，3月20日
-10.	Mach-o动态注入完成，3月25日
-11.	整套流程自动化完善，4月1日
-12.	对于市面上较为知名的app进行mach-o注入测试框架的效果，4月10日
+## Installation
 
-### 主要难点
+BDiOSpy is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-1. 通信协议的设计，以及如何在后台持续稳定的给予服务
-2. mac端和服务器端的配合软件部分
-3. 控件树的Json序列化
-4. iOS端的控制点击一直是一个问题，系统级的弹窗可能会对整个点击系统产生干扰
-5. 性能数据的定义和采集，以及发生crash的时候如何保存有效的函数栈信息
-6. 如何自动对ipa进行mach-o注入以及重签名保证ipa的可运行
+```ruby
+pod 'BDiOSpy'
+```
 
-### 架构图
-![bc040e7c-d6a6-4f69-a0d7-f1a219cd1e85.png](https://i.loli.net/2019/11/19/FqCtnuEck9LvjQp.png)
+## Author
 
+yanmingsysu, yanming.sysu@bytedance.com
+
+## License
+
+BDiOSpy is available under the MIT license. See the LICENSE file for more info.

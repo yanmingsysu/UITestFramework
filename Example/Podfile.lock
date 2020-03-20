@@ -1,0 +1,25 @@
+PODS:
+  - BDiOSpy (0.1.0):
+    - GCDWebServer (~> 3.0)
+  - GCDWebServer (3.5.3):
+    - GCDWebServer/Core (= 3.5.3)
+  - GCDWebServer/Core (3.5.3)
+
+DEPENDENCIES:
+  - BDiOSpy (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - GCDWebServer
+
+EXTERNAL SOURCES:
+  BDiOSpy:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BDiOSpy: 94c3502009134bde97200065639cc88b1810a4de
+  GCDWebServer: c0ab22c73e1b84f358d1e2f74bf6afd1c60829f2
+
+PODFILE CHECKSUM: f0b43a75b52ea8b5dd116ba98c808dc26b937ab2
+
+COCOAPODS: 1.8.4
